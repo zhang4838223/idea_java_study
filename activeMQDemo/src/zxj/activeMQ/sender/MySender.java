@@ -36,6 +36,8 @@ public class MySender {
                 producer.send(message);
             }
 
+            session.commit();
+
         }catch (Exception e){
             e.printStackTrace();
         }finally {
